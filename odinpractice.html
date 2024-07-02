@@ -15,7 +15,35 @@
 
         }
 
+        function multiply()
+        {
+            let a = prompt("write a number to multiply",""), b = prompt("write another number to multiply","");
+            
+            console.log(parseInt(a) * parseInt(b));
+        }
+        function capitalize()
+        {
+            let a = prompt('write your string','');
+            let b = a.at(0);
+            b = b.toUpperCase();
+            a = a.slice(1);
+            a = a.toLowerCase();
+            console.log(b + a);
+
+        }
+
+        function lastLetter()
+        {
+            let a = prompt('write your string','');
+            let b = a.length;
+            console.log('The last letter is ' + a.slice(b-1));
+
+        }
+        lastLetter();
+        capitalize();
         add7();
+        multiply();
+
     </script>
 </body>
 </html>
